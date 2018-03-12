@@ -3,13 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:JCMuzic"
              x:Class="JCMuzic.MainPage">
+    <ScrollView>
+        <StackLayout>
+            
+            <Button x:Name="Play" Clicked="PlayPauseClicked" Text="PLAY"/>
+            <Button x:Name="Stop" Clicked="StopButton_OnClicked" Text="STOP"/>
+            <ListView x:Name="playlist" />
 
-    <StackLayout>
+            
 
-        <Button x:Name="Play" Clicked="PlayPauseClicked" Text="PLAY"/>
-        <Button x:Name="Stop" Clicked="StopButton_OnClicked" Text="STOP"/>
-
-    </StackLayout>
+        </StackLayout>
+    </ScrollView>
+   
     
     
 </ContentPage>
